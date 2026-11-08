@@ -1,6 +1,6 @@
 # Reliability-Aware Selective RUL Prediction under Controlled Sensor Degradation
 
-**Curated, non-public review draft for the archived NASA C-MAPSS FD001–FD004 research project.**
+**Curated research-evidence and partial-code archive for NASA C-MAPSS FD001–FD004.**
 
 This repository preserves Jupyter notebooks and experimental artifacts associated with dataset-specific reliability-aware selective remaining useful life (RUL) prediction. The core workflow uses a GRU predictor, Monte Carlo dropout uncertainty, an empirical reliability-risk calibration and a frozen per-engine accept/abstain policy. Controlled sensor corruptions are used in development-stage diagnostics.
 
@@ -15,7 +15,7 @@ Do not compare capped-target and raw-target absolute MAEs as if they share the s
 
 ## Preserved contents
 
-The supplied archive has 8 Jupyter notebooks (`00_environment_check.ipynb` through `07_fd002_replication.ipynb`), result CSVs, JSON experiment records, numerical arrays (`.npz`), and two FD001 `.pt` checkpoints. The later `07_fd002_replication.ipynb` notebook also includes work on FD003 and FD004; its name does not describe its full scope.
+This repository has 8 Jupyter notebooks (`00_environment_check.ipynb` through `07_fd002_replication.ipynb`), selected result CSVs and JSON records, and two FD001 `.pt` checkpoints. Large `.npz` files are NOT in this curated repository and remain only in the original private backup. The later `07_fd002_replication.ipynb` notebook also includes work on FD003 and FD004; its name does not describe its full scope.
 
 Key frozen reporting evidence is located under:
 
@@ -52,11 +52,11 @@ Versions of other dependencies are not verified by that record. See `requirement
 
 ## Suggested citation and reuse
 
-A manuscript citation, archival DOI, and software license should be added **only after the author selects a license and verifies the deposited release**. Supporting Information and the final manuscript supply additional methodological detail and limitations.
+The author has added an MIT `LICENSE` for author-owned original research code, subject to confirmation that every included code component is owned by the author or compatible with that license. NASA C-MAPSS source data and third-party software retain their respective rights; the MIT license must not be interpreted as relicensing them. A citable release and archival DOI should be created only after the release contents and privacy review are verified. Supporting Information and the manuscript provide additional methodological details and limitations.
 
 
-## About this review package
-This is a **curated subset** of the original 137 MB research ZIP, assembled for internal review. It is **NOT a GitHub-ready public release**. The original ZIP is authoritative as a complete archive of the supplied files and must be kept unchanged.
+## Archive composition and remaining release checks
+This repository is a **curated subset** of the original 137 MB research ZIP, initially assembled for review. Its evidence-and-partial-code role is the intended public disclosure, **not** verified end-to-end reproduction. Before publication, the author must complete the manual source/privacy and license-scope review, confirm `LICENSE` is committed, and approve the repository state. Keep the original full ZIP unchanged and private.
 
 - `notebooks/` contains **8 notebooks with identical cell source but saved cell outputs and execution counts removed** to keep the package reviewable. Historical absolute Windows paths remain in code; the notebooks have **not been executed** in a fresh environment. Original notebook outputs remain in the original ZIP.
 - `results/` preserves the manuscript-ready cross-dataset files (including the frozen publication-strengthening manifest and tabular results) byte for byte.
@@ -64,4 +64,8 @@ This is a **curated subset** of the original 137 MB research ZIP, assembled for 
 - `models/` contains the two original FD001 checkpoints, which are historical binary artifacts and have not been loaded or validated here.
 - `PACKAGE_INVENTORY.csv` provides source-path and SHA-256 hashes of every included file; `MANIFEST_VERIFICATION.md` summarizes validation.
 
-**Before publishing:** review the notebook source for personal information and portability, decide a software license, validate environment/setup, decide an archival host for large binaries, and verify any external data citations.
+**Before publishing:** manually inspect notebook sources and JSON/CSV for information that should not be public, confirm license scope, and retain the partial-reproduction caveat unless an independent clean execution test has actually succeeded. Do not claim the notebooks reproduce every figure or result.
+
+## Release transparency
+
+A static scan of the curated text files and notebooks found no standard email, private-key, AWS access-key or GitHub-token patterns. This is **not** a substitute for the author’s manual privacy and intellectual-property review. The checkpoints were not deserialized and no notebook was run. Historical local Windows project paths are retained for provenance and require adjustment for any future execution.

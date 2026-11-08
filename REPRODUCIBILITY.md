@@ -29,7 +29,7 @@ Do not assert that running `pip install -r requirements-DRAFT.txt` reproduces th
 - FD004 TEST results were not validly scored because 11 of 248 trajectories failed the frozen 30-cycle minimum. Preserve its **unscored** status.
 - FD003/FD004 use raw, uncapped targets; cross-dataset absolute MAEs must not be compared as though all targets used the same cap.
 
-## 5. Before a public release
+## 5. Public-release conditions
 
 1. Keep the full original archive as an untouched private backup; it is not interchangeable with this curated subset.
 2. Audit notebook source and binary artifacts for personal details, credentials and licensing issues. Automated pattern checks alone are not sufficient.
@@ -37,3 +37,7 @@ Do not assert that running `pip install -r requirements-DRAFT.txt` reproduces th
 4. Test a clean environment **if** public documentation will claim runnable code; otherwise retain the limited-reproducibility statement.
 5. Choose and add an appropriate license, then create a public release and citation/DOI only after the release review.
 6. Update the manuscript Data Availability Statement only with a verified publicly accessible release or DOI. A private GitHub repository is not yet publicly available.
+
+## 6. License and manual review status
+
+The author reports adding an MIT `LICENSE` in GitHub. The MIT license should apply only to code and materials the author has rights to license; it does not supersede NASA source-data terms or third-party library licenses. A static text-pattern scan did not find common credential signatures, but personal-data and third-party content require a separate manual check. The frozen reported results have not been regenerated or modified by this documentation update.

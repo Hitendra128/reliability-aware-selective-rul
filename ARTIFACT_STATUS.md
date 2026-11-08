@@ -11,12 +11,12 @@ These statements describe the supplied `New folder.zip` only. They do not establ
 
 ## Source priority
 
-1. **Publication-strengthening frozen reporting:** `cross_dataset_synthesis/manuscript_ready/publication_strengthening_631mf/` with its `FINAL_PUBLICATION_STRENGTHENING_MANIFEST_631MF.json` and listed checksums.
-2. **Manuscript-ready cross-dataset summaries:** `cross_dataset_synthesis/manuscript_ready/`.
-3. **Dataset-specific closure records:** such as `fd001_final/fd001_final_evidence.json` and FD004 admissibility contract JSONs; interpret according to their historical stages.
+1. **Publication-strengthening frozen reporting:** `results/cross_dataset_synthesis/manuscript_ready/publication_strengthening_631mf/` with its `FINAL_PUBLICATION_STRENGTHENING_MANIFEST_631MF.json` and listed checksums.
+2. **Manuscript-ready cross-dataset summaries:** `results/cross_dataset_synthesis/manuscript_ready/`.
+3. **Dataset-specific closure records:** such as `evidence/fd001_final/fd001_final_evidence.json` and FD004 admissibility contract JSONs; interpret according to their historical stages.
 4. **Exploratory/intermediate notebooks and result folders:** preserved for provenance, not automatic authority for final reported numbers.
 
-**Example of supersession:** `fd001_final/fd001_final_evidence.json` contains an earlier 10,000-bootstrap CI; final publication-strengthening results use a later 20,000-bootstrap analysis. Do not silently mix these values.
+**Example of supersession:** `evidence/fd001_final/fd001_final_evidence.json` contains an earlier 10,000-bootstrap CI; final publication-strengthening results use a later 20,000-bootstrap analysis. Do not silently mix these values.
 
 ## Integrity check
 
