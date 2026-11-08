@@ -1,0 +1,19 @@
+{
+  "fd003_reopened": false,
+  "fd004_reopened": false,
+  "mc_dropout": false,
+  "model_inference": false,
+  "policy_selection": false,
+  "prediction_regeneration": false,
+  "primary_result_changed": false,
+  "random_reference": "normalized MAE-AURC = 1 corresponds to expected random-ranking selective MAE",
+  "raw_rul_access": false,
+  "raw_test_access": false,
+  "role": "posthoc_reporting_only_risk_tie_sensitivity",
+  "scientific_recomputation": false,
+  "stage": "6.31M-E-R3",
+  "threshold_tuning": false,
+  "tie_handling": "exact equal-risk groups preserved; only ordering within equal-risk groups randomized",
+  "tie_permutation_replicates": 20000,
+  "upstream_publication_analysis_sha256": "40e51e4ffcffee8854e2e71a7c902bca2ee38c992529151a8b4964738deca2ab"
+}

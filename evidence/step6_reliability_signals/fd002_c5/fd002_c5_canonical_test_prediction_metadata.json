@@ -1,0 +1,29 @@
+{
+  "canonical_source_object": "test_prediction_628hc0r2",
+  "csv_file_sha256": "244ba33c15397aedd67ebc728311c8dcad2f1dc59f06aea0ba8008c6de8c5336",
+  "csv_filename": "fd002_c5_canonical_test_prediction.csv",
+  "dataset": "FD002",
+  "deterministic_lineage_exact": true,
+  "deterministic_lineage_objects": [
+    "TEST_DETERMINISTIC_PREDICTIONS_FD002_628FAR2",
+    "TEST_DET_628FBR1",
+    "test_prediction_628fb",
+    "test_prediction_628hc0r2"
+  ],
+  "mc_mean_used_as_point_prediction": false,
+  "model_executed": false,
+  "model_retrained": false,
+  "n_test_endpoints": 259,
+  "npz_file_sha256": "ea7942da1d15f090844e613ccfa56312aa2031dc1fcbd4aa58740171a102cb7c",
+  "npz_filename": "fd002_c5_canonical_test_prediction.npz",
+  "official_test_labels_read": false,
+  "prediction_dtype": "float64",
+  "prediction_semantic_role": "deterministic endpoint RUL point prediction",
+  "prediction_sha256": "10470072f7f027e86d5ec5dfb4a2c8077c13ad914e042e4a7721f066edf37d0b",
+  "prediction_shape": [
+    259
+  ],
+  "step": "6.28H-C5-F2-A",
+  "test_scored": false,
+  "threshold_tuned_or_modified": false
+}

@@ -1,0 +1,53 @@
+{
+  "array_sha256": {
+    "dropout": "015c590e536eba84112a733f023f42443f77e9d1d90dfb5142ef607c840a05b8",
+    "level": "de93cddea7a09a9e7d6ba54e0d56fc1a71e9964f73c7291f139de85343f8b5e2",
+    "noise": "69ddb45e1ccbaec8f60630b8deef651ad6673142f5ba8da5c400d37d602d5eff",
+    "sensor_quality_risk": "23e5a11d8b7cf5297dacf20d0ae65e597f69080f63611f135d2c3d643c93fcd1",
+    "stuck": "980de182c16508818ee3c620f0fb0aae90de91f0dcc1268ec066cc3eab71564d"
+  },
+  "artifact_status": "FROZEN_WRITE_COMPLETE_RELOAD_NOT_YET_VERIFIED",
+  "branch_names": [
+    "level",
+    "noise",
+    "dropout",
+    "stuck"
+  ],
+  "branch_stage": "FIT-calibrated branch risks",
+  "dataset": "NASA C-MAPSS FD002",
+  "dev_windows_per_scenario": 8367,
+  "file_sha256": {
+    "manifest_csv": "ce51c1e06bbd69ab8b8605107073179dd235e3a3fc7a31900214a67e005d72ac",
+    "npz": "e860de56159135b7818d8a0882db5b0c4aef6708719af8ca2e9090f6cbaca5ad"
+  },
+  "lineage_contract": {
+    "c3a3a2_original_scalar_reconstruction_max_error": 0.0,
+    "must_not_reapply_final_sensor_quality_from_raw_628hc2b": true,
+    "r4a_confirmed_final_function_expects": "raw branch scores",
+    "stored_branch_matrices_are": "already calibrated"
+  },
+  "matrix_dtype": "float64",
+  "matrix_shape": [
+    315,
+    8367
+  ],
+  "methodological_status": {
+    "abstention_threshold_selected": false,
+    "adaptive_fusion_selected": false,
+    "dev_rul_labels_used_for_this_freeze": false,
+    "model_executed": false,
+    "model_retrained": false,
+    "official_test_labels_read": false,
+    "test_scored": false
+  },
+  "scenario_count": 315,
+  "source_objects": {
+    "dropout": "FD002_DROPOUT_RISK_MATRIX_628HC3A3A2",
+    "level": "FD002_LEVEL_RISK_MATRIX_628HC3A3A2",
+    "manifest": "FD002_CORRUPTION_MANIFEST_628GD",
+    "noise": "FD002_NOISE_RISK_MATRIX_628HC3A3A2",
+    "sensor_quality_risk": "FD002_SENSOR_QUALITY_RISK_MATRIX_628HC2C",
+    "stuck": "FD002_STUCK_RISK_MATRIX_628HC3A3A2"
+  },
+  "step": "6.28H-C3-A3-A2-F1-A"
+}

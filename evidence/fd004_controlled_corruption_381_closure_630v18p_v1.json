@@ -1,0 +1,37 @@
+{
+  "closure": {
+    "all_family_closure_sha_checks": true,
+    "all_family_semantic_checks": true,
+    "dataset": "FD004",
+    "dev_targets_errors_used": false,
+    "executable_scenario_count": 381,
+    "execution_admission_sha256": "41bb57b7bbaf90e80c96b9e75eeeac81bae2b8df7a44aea1d09df84bee3f56d4",
+    "execution_inadmissible_partition_exact": true,
+    "family_closure_sha256": {
+      "bias": "68dbb6cd7fde080687492fea10a53cdf305b227717b411bb507e3ef4f99bb353",
+      "drift": "7c811a1764711a377c3ecbb9fc65c20e6dc363b74514a46252453960a571da58",
+      "dropout": "38469b5a54b3e5085224fb364bde27f4a035f7adac1b77590b1b3960dc62da05",
+      "noise": "7ccdf6dcf3d8da98cdc4b2c57984f4bf21deb38e6e8bbb2f7860e87d5208224a",
+      "stuck": "df4618f9c24bfc61aa3509bf1efabe8fd72f6c3c417c799970e0f196af40f6cc"
+    },
+    "family_counts": {
+      "bias": 102,
+      "drift": 102,
+      "dropout": 63,
+      "noise": 51,
+      "stuck": 63
+    },
+    "family_manifests_reconstruct_execution_manifest": true,
+    "full_mc_matrices_retained": false,
+    "official_rul_contents_read": false,
+    "policy_selected": false,
+    "scientific_execution_performed_in_closure": false,
+    "scientific_manifest_count": 441,
+    "stage": "6.30V-18P",
+    "status": "CONTROLLED_CORRUPTION_381_LABEL_FREE_COMPLETE_EVIDENCE_LOCKED",
+    "structurally_inadmissible_count": 60,
+    "test_contents_read": false,
+    "threshold_selected": false
+  },
+  "closure_sha256": "76e3ca2c1813aefa6562dd3d5b791754cfa072f7e494cb5c483382fa0af02fc5"
+}

@@ -1,0 +1,3 @@
+target,bootstrap_replicates,fraction_MAE_gain_positive,fraction_RMSE_gain_positive,fraction_abstained_MAE_higher
+RUL_cap_125,10000,0.9643,0.9329,0.9643
+RUL_raw,10000,0.9603,0.9544,0.9603

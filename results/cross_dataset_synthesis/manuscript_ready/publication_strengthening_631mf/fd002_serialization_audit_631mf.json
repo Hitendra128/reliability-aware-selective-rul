@@ -1,0 +1,52 @@
+{
+  "abstain_mask_mismatch_count": 0,
+  "abstain_masks_exact_equal": true,
+  "accept_mask_mismatch_count": 0,
+  "accept_masks_exact_equal": true,
+  "decision_csv_reproduces_frozen_rule": true,
+  "decision_invariant": true,
+  "decision_rule_mismatch_count": 0,
+  "endpoint_count": 259,
+  "float64_machine_epsilon": 2.220446049250313e-16,
+  "frozen_threshold": 0.8003345892330226,
+  "max_difference_to_threshold_margin_ratio": 6.734608447083579e-14,
+  "minimum_distance_to_frozen_threshold": 0.0032970677756505307,
+  "model_inference": false,
+  "policy_changed": false,
+  "publication_metric_computed": false,
+  "ranking_invariant": true,
+  "raw_rul_access": false,
+  "raw_test_access": false,
+  "risk_abs_difference_quantiles": {
+    "q100": 2.220446049250313e-16,
+    "q50": 0.0,
+    "q90": 1.1102230246251565e-16,
+    "q99": 2.220446049250313e-16
+  },
+  "risk_exact_equal": false,
+  "risk_max_abs_difference": 2.220446049250313e-16,
+  "risk_mean_abs_difference": 2.834497973101872e-17,
+  "risk_nonzero_difference_count": 68,
+  "risk_order_exact": true,
+  "risk_order_mismatch_positions": 0,
+  "risk_representations_produce_same_decisions": true,
+  "roundtrip_level_le_1e_12": true,
+  "safe_serialization_difference": true,
+  "scientific_recomputation": false,
+  "score_csv_reproduces_frozen_rule": true,
+  "score_rule_mismatch_count": 0,
+  "stage": "6.31M-E-R1",
+  "threshold_candidates": [
+    [
+      "scoring_metadata",
+      "frozen_exact_risk_threshold",
+      0.8003345892330226
+    ],
+    [
+      "decision_metadata",
+      "frozen_risk_threshold",
+      0.8003345892330226
+    ]
+  ],
+  "threshold_changed": false
+}

@@ -1,0 +1,15 @@
+Evidence block,Measure,Value
+Clean DEV,Realized coverage,0.7999815225424981
+Clean DEV,Full MAE,28.66427176317141
+Clean DEV,Accepted MAE,27.115518748846267
+Clean DEV,Abstained MAE,34.85856846111201
+Clean DEV,Selective MAE gain,1.5487530143251433
+Clean DEV,Relative MAE reduction (%),5.4030781843026645
+Controlled corruption,Executable scenarios,381
+Controlled corruption,Positive-gain scenarios,365
+Controlled corruption,Zero-gain scenarios,0
+Controlled corruption,Negative-gain scenarios,16
+Controlled corruption,Positive-gain rate,0.958005249343832
+Controlled corruption,Negative-gain family,stuck
+Controlled corruption,Negative gain by severity,"{""high"": 11, ""low"": 1, ""medium"": 4}"
+Held-out TEST,Status,NOT_SCORED_UNDER_FROZEN_PROTOCOL_DUE_TO_SHORT_TEST_TRAJECTORIES

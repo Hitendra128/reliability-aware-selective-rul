@@ -1,0 +1,148 @@
+{
+  "artifacts": {
+    "aurc_summary_631mf.csv": {
+      "path": "C:\\RUL_Reliability_Research\\06_results\\cross_dataset_synthesis\\manuscript_ready\\publication_strengthening_631mf\\aurc_summary_631mf.csv",
+      "sha256": "3d0408970f3c53a5e332ab870d04a27ff62c39eaa50ba96f67bf4b3e74c745a3",
+      "size_bytes": 445,
+      "write_status": "written_and_verified"
+    },
+    "fd001_risk_coverage_curve_631mf.csv": {
+      "path": "C:\\RUL_Reliability_Research\\06_results\\cross_dataset_synthesis\\manuscript_ready\\publication_strengthening_631mf\\fd001_risk_coverage_curve_631mf.csv",
+      "sha256": "db6ae247f177a468da9473f87b381f83a794e5ccceec63975e324975ab6afe07",
+      "size_bytes": 10507,
+      "write_status": "written_and_verified"
+    },
+    "fd001_threshold_attainable_curve_631mf.csv": {
+      "path": "C:\\RUL_Reliability_Research\\06_results\\cross_dataset_synthesis\\manuscript_ready\\publication_strengthening_631mf\\fd001_threshold_attainable_curve_631mf.csv",
+      "sha256": "b250ef80c38536cbdcaf8f1adcaaeefa2139381d7fc236998fa2adc622579c5f",
+      "size_bytes": 1522,
+      "write_status": "written_and_verified"
+    },
+    "fd002_risk_coverage_curve_631mf.csv": {
+      "path": "C:\\RUL_Reliability_Research\\06_results\\cross_dataset_synthesis\\manuscript_ready\\publication_strengthening_631mf\\fd002_risk_coverage_curve_631mf.csv",
+      "sha256": "75d099ff5aeef0a5029fca9c3b607da863a1a7461d9eae32dfa2f4d5c97814a3",
+      "size_bytes": 31417,
+      "write_status": "written_and_verified"
+    },
+    "fd002_serialization_audit_631mf.json": {
+      "path": "C:\\RUL_Reliability_Research\\06_results\\cross_dataset_synthesis\\manuscript_ready\\publication_strengthening_631mf\\fd002_serialization_audit_631mf.json",
+      "sha256": "0e8b053017b7c7dc372a88e6ebbc71f0e5bfb4685a25ef43d6ccdc49285d1dee",
+      "size_bytes": 1624,
+      "write_status": "written_and_verified"
+    },
+    "fd002_threshold_attainable_curve_631mf.csv": {
+      "path": "C:\\RUL_Reliability_Research\\06_results\\cross_dataset_synthesis\\manuscript_ready\\publication_strengthening_631mf\\fd002_threshold_attainable_curve_631mf.csv",
+      "sha256": "e3b6c994f0b4c98aa13a8b6418e79f7427ea72339d7e495378495f05a44581e1",
+      "size_bytes": 29686,
+      "write_status": "written_and_verified"
+    },
+    "fd003_preservation_status_631mf.json": {
+      "path": "C:\\RUL_Reliability_Research\\06_results\\cross_dataset_synthesis\\manuscript_ready\\publication_strengthening_631mf\\fd003_preservation_status_631mf.json",
+      "sha256": "d0ed7381a82e182c8cd4561e84041c9f3969de6fbc6cfb4f0977d22d1ad91b93",
+      "size_bytes": 523,
+      "write_status": "written_and_verified"
+    },
+    "fixed_policy_bootstrap_summary_631mf.csv": {
+      "path": "C:\\RUL_Reliability_Research\\06_results\\cross_dataset_synthesis\\manuscript_ready\\publication_strengthening_631mf\\fixed_policy_bootstrap_summary_631mf.csv",
+      "sha256": "bf40d552117c960ca70f01c68e0b44ba18193d4943cf38683eff1527a2e6c2eb",
+      "size_bytes": 1486,
+      "write_status": "written_and_verified"
+    },
+    "matched_random_rejection_summary_631mf.csv": {
+      "path": "C:\\RUL_Reliability_Research\\06_results\\cross_dataset_synthesis\\manuscript_ready\\publication_strengthening_631mf\\matched_random_rejection_summary_631mf.csv",
+      "sha256": "c99e5348c47b47552ac90acbd3aeb993352da784233ac86cc9127ccddfb41323",
+      "size_bytes": 1000,
+      "write_status": "written_and_verified"
+    },
+    "publication_analysis_contract_631mf.json": {
+      "path": "C:\\RUL_Reliability_Research\\06_results\\cross_dataset_synthesis\\manuscript_ready\\publication_strengthening_631mf\\publication_analysis_contract_631mf.json",
+      "sha256": "3ca944cf4ab304195e6fba828a0c09ab65f10360a8d16c63489127568f921a98",
+      "size_bytes": 1674,
+      "write_status": "written_and_verified"
+    },
+    "publication_strengthening_interpretation_631mf.json": {
+      "path": "C:\\RUL_Reliability_Research\\06_results\\cross_dataset_synthesis\\manuscript_ready\\publication_strengthening_631mf\\publication_strengthening_interpretation_631mf.json",
+      "sha256": "dc15f1350d4ded9a924c2d5866b23b3417a5ffd5c9e6730918d2af8583054742",
+      "size_bytes": 2855,
+      "write_status": "written_and_verified"
+    },
+    "publication_strengthening_summary_631mf.csv": {
+      "path": "C:\\RUL_Reliability_Research\\06_results\\cross_dataset_synthesis\\manuscript_ready\\publication_strengthening_631mf\\publication_strengthening_summary_631mf.csv",
+      "sha256": "e6947f190e0082aeab84e9c76e3f3e4b210ba7405a25bffbb7d209a7dda249da",
+      "size_bytes": 981,
+      "write_status": "written_and_verified"
+    },
+    "publication_strengthening_summary_631mf.md": {
+      "path": "C:\\RUL_Reliability_Research\\06_results\\cross_dataset_synthesis\\manuscript_ready\\publication_strengthening_631mf\\publication_strengthening_summary_631mf.md",
+      "sha256": "63d4a39845ff57fbf1a2cef15f4eadcb8fc425684cd74146112689628001971a",
+      "size_bytes": 2991,
+      "write_status": "written_and_verified"
+    },
+    "tie_sensitivity_contract_631mf.json": {
+      "path": "C:\\RUL_Reliability_Research\\06_results\\cross_dataset_synthesis\\manuscript_ready\\publication_strengthening_631mf\\tie_sensitivity_contract_631mf.json",
+      "sha256": "8e705091c501e5861335a347d9fa488cfb8018d97fc663dac253c175ac56f016",
+      "size_bytes": 768,
+      "write_status": "written_and_verified"
+    },
+    "tie_sensitivity_summary_631mf.csv": {
+      "path": "C:\\RUL_Reliability_Research\\06_results\\cross_dataset_synthesis\\manuscript_ready\\publication_strengthening_631mf\\tie_sensitivity_summary_631mf.csv",
+      "sha256": "21b6ab2c6f73f10de52d3e5c8b38c546e93698d8601ae7def185f7bd47895131",
+      "size_bytes": 896,
+      "write_status": "written_and_verified"
+    }
+  },
+  "empirical_authority": "STEP_6.31L_REMAINS_AUTHORITATIVE",
+  "fd003_reconstructed": false,
+  "fd004_reopened": false,
+  "interpretation": {
+    "fd001": {
+      "aurc_reporting_guidance": "Do not present the single endpoint-ID-tiebroken FD001 AURC as a uniquely defined quantity. Prefer the tie-sensitivity distribution and/or threshold-attainable curve, noting that all 20,000 sampled tie orders remained better than the random-ranking reference.",
+      "claim_boundary": "Report as supportive/directional evidence; do not claim a 95%-level statistically conclusive selective improvement.",
+      "interpretation": "The frozen FD001 selective policy produced a favorable held-out point estimate and meaningful matched-random separation. Endpoint-bootstrap directional stability was high, but the 95% percentile interval for selective MAE gain included zero. Risk-ranking advantage remained below the random-ranking nAURC reference across all sampled within-tie orderings, although the precise AURC magnitude is sensitive to the large number of tied risk values.",
+      "primary_target": "RUL_cap_125",
+      "status": "supportive_but_statistically_cautious"
+    },
+    "fd002": {
+      "claim_boundary": "Strong held-out evidence conditional on the frozen trained model/policy; bootstrap results do not quantify retraining or random-seed variability.",
+      "interpretation": "The frozen FD002 reliability policy shows strong held-out error separation. The uncertainty-selected accepted subset outperformed matched random rejection at the same coverage, the endpoint-bootstrap selective-gain interval remained strictly positive, and the nAURC ranking advantage was essentially insensitive to tied-risk ordering.",
+      "primary_target": "piecewise-capped RUL, cap=125",
+      "status": "strong_and_consistent"
+    },
+    "fd003": {
+      "interpretation": "The original frozen held-out negative result remains authoritative. No row-level post-hoc reconstruction or new selective analysis was performed.",
+      "status": "heldout_negative_counterexample"
+    },
+    "fd004": {
+      "interpretation": "Held-out TEST remains unscored under the frozen fixed-window protocol because short TEST trajectories violated the original evaluation admissibility contract.",
+      "status": "structural_protocol_guard_unscored"
+    },
+    "global_claim": "Reliability-aware selective prediction produced useful error separation in FD001 and especially FD002, but the benefit was not universal: FD003 remained a held-out negative counterexample and FD004 remained structurally unscored under the frozen protocol.",
+    "overall_role": "posthoc_reporting_only_publication_strengthening",
+    "prohibited_claims": [
+      "universal selective-prediction improvement",
+      "formal model-training significance from endpoint bootstrap",
+      "a uniquely defined FD001 AURC despite tied risk values",
+      "FD004 held-out TEST performance",
+      "reconstructed FD003 row-level post-hoc results",
+      "post-TEST policy optimization"
+    ],
+    "stage": "6.31M-F"
+  },
+  "label_reconstruction": false,
+  "mc_dropout": false,
+  "model_inference": false,
+  "new_analysis_at_persistence_stage": false,
+  "policy_selection": false,
+  "prediction_regeneration": false,
+  "primary_result_changed": false,
+  "raw_rul_access": false,
+  "raw_test_access": false,
+  "scientific_recomputation": false,
+  "stage": "6.31M-F",
+  "status": "PUBLICATION_STRENGTHENING_REPORTING_EVIDENCE_FROZEN",
+  "threshold_tuning": false,
+  "upstream_fd002_serialization_audit_sha256": "a12093564c97d5d5f1c6292c51e09deba6258058b80243d3a8690755336c7582",
+  "upstream_final_manifest_sha256_631l": "e5cb63bb7e2abf2518a14baf1569c771d8b227dc9a3c094fb57e41dfecfddd8e",
+  "upstream_publication_analysis_contract_sha256": "40e51e4ffcffee8854e2e71a7c902bca2ee38c992529151a8b4964738deca2ab",
+  "upstream_tie_sensitivity_contract_sha256": "a3167ab562a21e8978545e8823c16a871796cd8185ab2d73b97ede45e79a9615"
+}

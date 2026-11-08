@@ -1,0 +1,173 @@
+{
+  "FD004_FINAL_DATASET_CLOSURE_CONTRACT_630W11": {
+    "clean_dev_completed": true,
+    "controlled_corruption_completed": true,
+    "controlled_corruption_scenario_count": 381,
+    "dataset": "FD004",
+    "final_scientific_conclusion_sha256": "85881a5507daa13b4f985e099a16fd61bc39d94c9f2d6aa3bb916db2b38bd1d3",
+    "frozen_policy": {
+      "acceptance_rule": "accept iff final_selective_risk <= frozen_risk_threshold",
+      "nominal_coverage": 0.8,
+      "risk_threshold": 0.7873400997304446
+    },
+    "model_retraining_after_test": false,
+    "next_stage": "CROSS_DATASET_SYNTHESIS_FD001_FD004",
+    "official_rul_contents_opened": true,
+    "one_way_test_admission_sha256": "0070dede7891b9ef0396071abc219671a7b46f1c3a09da177da15815c1c69021",
+    "policy_change_after_test": false,
+    "post_test_engine_exclusion": false,
+    "post_test_padding": false,
+    "post_test_variable_length_inference": false,
+    "post_test_window_rule_change": false,
+    "preprocessing_refit_after_test": false,
+    "pretest_evidence_closure_sha256": "67b1f2110505669a06e508037f211716235574ffe628bb12ec59435051959341",
+    "primary_test_inference_performed": false,
+    "primary_test_scored": false,
+    "primary_test_structurally_admissible": false,
+    "primary_test_unscored_reason": "11 of 248 TEST engines have fewer than the frozen 30 observed cycles required by the inherited terminal-window TEST protocol; historical rule requires stopping before inference",
+    "reporting_rule": "Report FD004 CLEAN DEV and controlled-corruption findings as completed evidence; report primary held-out TEST as structurally unscored under the frozen protocol; do not substitute a post-hoc 237-engine subset or padded/variable-length TEST analysis as the primary held-out result.",
+    "risk_recalibration_after_test": false,
+    "short_test_engine_count": 11,
+    "short_test_engine_lengths": [
+      [
+        10,
+        23
+      ],
+      [
+        19,
+        24
+      ],
+      [
+        28,
+        20
+      ],
+      [
+        125,
+        21
+      ],
+      [
+        141,
+        19
+      ],
+      [
+        156,
+        28
+      ],
+      [
+        164,
+        29
+      ],
+      [
+        204,
+        19
+      ],
+      [
+        229,
+        20
+      ],
+      [
+        239,
+        28
+      ],
+      [
+        246,
+        29
+      ]
+    ],
+    "short_trajectory_recovery_sha256": "bb09222b73a883663d712eddcd655ef04538b24c31c67ef517217c4910be58dc",
+    "stage": "6.30W-11",
+    "status": "COMPLETE_REPORTING_ONLY_EVIDENCE_LOCKED_TEST_STRUCTURALLY_UNSCORED",
+    "targeted_historical_rule_recovery_sha256": "54706e4aa34331c1d1e41971611f26d5cd87491ea44a913869a4c8f0a1900e6c",
+    "test_admitted_one_way": true,
+    "test_contents_opened": true,
+    "test_outcome_metrics_computed": false,
+    "test_structural_admissibility_sha256": "967a244670829a863b7b5d6bfaeeb1aa79e8bd7b39a2ef7f2acffb52ea0dd00b",
+    "threshold_change_after_test": false
+  },
+  "FD004_FINAL_DATASET_CLOSURE_SHA256_630W11": "786a88b551ccba497838b56d58dbb6985ed4c32e4564bd89aef741cc2182dba9",
+  "FD004_FINAL_SCIENTIFIC_CONCLUSION_630W11": {
+    "clean_dev": {
+      "abstained_mae": 34.85856846111201,
+      "accepted_mae": 27.115518748846267,
+      "full_mae": 28.66427176317141,
+      "realized_coverage": 0.7999815225424981,
+      "relative_mae_reduction_percent": 5.4030781843026645,
+      "selective_mae_gain": 1.5487530143251433
+    },
+    "clean_dev_interpretation": "Under the prospectively frozen label-free operating policy, CLEAN DEV selective prediction improved MAE at approximately 80% realized coverage: accepted predictions had lower MAE than the full DEV population, while abstained predictions had substantially higher MAE.",
+    "controlled_corruption": {
+      "negative_gain_by_severity": {
+        "high": 11,
+        "low": 1,
+        "medium": 4
+      },
+      "negative_gain_count": 16,
+      "negative_gain_family": "stuck",
+      "positive_gain_count": 365,
+      "positive_gain_rate": 0.958005249343832,
+      "scenario_count": 381,
+      "zero_gain_count": 0
+    },
+    "controlled_corruption_interpretation": "Across the 381 executable controlled sensor-degradation scenarios, the frozen selective policy produced positive selective MAE gain in 365 scenarios. The 16 negative-gain scenarios all occurred in the stuck-sensor family, with the limitation concentrated most strongly at high severity.",
+    "dataset": "FD004",
+    "generalization_claim": "FD004 supports the DEV-stage and controlled-degradation evidence for reliability-aware selective RUL prediction, including a documented stuck-sensor failure mode. It does not provide an FD004 held-out selective-performance estimate under the frozen primary TEST protocol because that protocol is structurally incompatible with the complete TEST endpoint population.",
+    "heldout_test": {
+      "frozen_window_length": 30,
+      "inference_performed": false,
+      "primary_result": "NOT_SCORED_UNDER_FROZEN_PROTOCOL_DUE_TO_SHORT_TEST_TRAJECTORIES",
+      "scoring_performed": false,
+      "short_engine_count": 11,
+      "short_engine_lengths": [
+        [
+          10,
+          23
+        ],
+        [
+          19,
+          24
+        ],
+        [
+          28,
+          20
+        ],
+        [
+          125,
+          21
+        ],
+        [
+          141,
+          19
+        ],
+        [
+          156,
+          28
+        ],
+        [
+          164,
+          29
+        ],
+        [
+          204,
+          19
+        ],
+        [
+          229,
+          20
+        ],
+        [
+          239,
+          28
+        ],
+        [
+          246,
+          29
+        ]
+      ],
+      "structurally_admissible": false,
+      "test_engine_count": 248
+    },
+    "heldout_test_interpretation": "No primary held-out FD004 TEST performance metric is reported. The inherited prospectively frozen TEST protocol requires one terminal 30-cycle window for every TEST engine and explicitly requires stopping before inference if any TEST engine has fewer than 30 observed cycles. FD004 contains 11 such engines among 248 TEST engines, so primary TEST inference/scoring was stopped before prediction rather than introducing post-access padding, engine exclusion, variable-length inference, or another methodological repair.",
+    "methodological_integrity": "TEST and official RUL were opened only after the pre-TEST evidence closure and one-way admission gate. No deterministic TEST inference, MC-dropout uncertainty, TEST risk, prediction error, MAE, threshold retuning, policy change, model retraining, preprocessing refit, or risk recalibration was performed after the short-trajectory guard was triggered."
+  },
+  "FD004_FINAL_SCIENTIFIC_CONCLUSION_SHA256_630W11": "85881a5507daa13b4f985e099a16fd61bc39d94c9f2d6aa3bb916db2b38bd1d3"
+}

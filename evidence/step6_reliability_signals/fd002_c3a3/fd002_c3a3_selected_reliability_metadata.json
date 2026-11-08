@@ -1,0 +1,43 @@
+{
+  "adaptive_candidates_evaluated": 3,
+  "adaptive_candidates_passing_all_goals": 0,
+  "adaptive_fusion_accepted": false,
+  "array_sha256": {
+    "clean_uncertainty_risk": "de7043c0999251ff9037aeb18fd6bb7536b6987a09b4d0966ba6dc58da2293a1",
+    "corrupted_uncertainty_risk": "0db594169217fc9786ed694623b3cb0df581a6b0b89fbe7939af2f5e740bd0c7"
+  },
+  "dataset": "NASA C-MAPSS FD002",
+  "decision": "retain_uncertainty_only",
+  "development_decision_source_step": "6.28H-C3-A3-A3-A7",
+  "file_sha256": {
+    "decision_csv": "8cc44f701043f187ea8ca22e36ede1a98601ccffebb274abbb8b3d096fe82666",
+    "selected_risk_npz": "e13eb912b4e6408b8591eef306c2caede15bbf9cc80c0183b10321128858cadb"
+  },
+  "freeze_status": "WRITE_COMPLETE_RELOAD_NOT_YET_VERIFIED",
+  "methodological_status": {
+    "abstention_threshold_selected": false,
+    "dev_rul_labels_used_to_make_development_decision": true,
+    "model_executed": false,
+    "model_retrained": false,
+    "new_architecture_introduced": false,
+    "new_gamma_selected": false,
+    "new_gate_threshold_selected": false,
+    "official_test_labels_read": false,
+    "test_scored": false
+  },
+  "selected_reliability_architecture": "uncertainty_only",
+  "selected_risk_shape": {
+    "clean": [
+      8367
+    ],
+    "corrupted": [
+      315,
+      8367
+    ]
+  },
+  "selected_risk_source_objects": {
+    "clean": "FD002_DEV_SELECTIVE_RISK_628FCR2",
+    "corrupted": "FD002_CORRUPTED_UNCERTAINTY_RISK_MATRIX_628HC3A0R1"
+  },
+  "step": "6.28H-C3-A3-A3-F2-A"
+}

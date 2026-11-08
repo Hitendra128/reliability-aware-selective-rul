@@ -1,0 +1,95 @@
+{
+  "artifacts": {
+    "figure1_pdf": {
+      "path": "C:\\RUL_Reliability_Research\\06_results\\cross_dataset_synthesis\\manuscript_ready\\figures\\figure1_heldout_selective_mae_effect_631k.pdf",
+      "sha256": "c059e330184ae02a70e3e47284e598e6a345a0f94d3969d99caa182556621a50",
+      "size_bytes": 20701
+    },
+    "figure1_png": {
+      "path": "C:\\RUL_Reliability_Research\\06_results\\cross_dataset_synthesis\\manuscript_ready\\figures\\figure1_heldout_selective_mae_effect_631k.png",
+      "sha256": "8e909f2a70aa8a628011bd0b8e762057ce057427c2dce5477a840abab4405cc5",
+      "size_bytes": 195829
+    },
+    "figure2_pdf": {
+      "path": "C:\\RUL_Reliability_Research\\06_results\\cross_dataset_synthesis\\manuscript_ready\\figures\\figure2_fd004_corruption_gain_direction_631k.pdf",
+      "sha256": "9881dc25fb377d70938403652f9ac8fc0f7a5fd087867a8cff4dc58798f23894",
+      "size_bytes": 17953
+    },
+    "figure2_png": {
+      "path": "C:\\RUL_Reliability_Research\\06_results\\cross_dataset_synthesis\\manuscript_ready\\figures\\figure2_fd004_corruption_gain_direction_631k.png",
+      "sha256": "b2ad4a53f92ca45af374ee88bf6b314e6d67c22673e7de2c296ed5a900d6c76f",
+      "size_bytes": 140911
+    },
+    "figure_checkpoint": {
+      "path": "C:\\RUL_Reliability_Research\\checkpoints\\fd001_fd004_manuscript_figures_631k_v1.json",
+      "sha256": "9cacc09d2ce4dd7eb1207fca67207dae9347d0954c4113ae1085338444a9bc2a",
+      "size_bytes": 3434
+    },
+    "figure_metadata_json": {
+      "path": "C:\\RUL_Reliability_Research\\06_results\\cross_dataset_synthesis\\manuscript_ready\\figures\\figure_captions_and_reporting_contract_631k.json",
+      "sha256": "9585b9a282c7e84dc23e8b1a96d68c4cd75f0846d0a4e99938842a041e5a4cde",
+      "size_bytes": 2112
+    },
+    "reporting_bundle_json": {
+      "path": "C:\\RUL_Reliability_Research\\06_results\\cross_dataset_synthesis\\manuscript_ready\\fd001_fd004_manuscript_reporting_bundle_631j.json",
+      "sha256": "b7f434e73487b5e4ddd547af6c008a2e764d507362ad7477c64f90828c7967e6",
+      "size_bytes": 11020
+    },
+    "reporting_bundle_markdown": {
+      "path": "C:\\RUL_Reliability_Research\\06_results\\cross_dataset_synthesis\\manuscript_ready\\fd001_fd004_manuscript_reporting_bundle_631j.md",
+      "sha256": "2c45377199ce475a13e1bff86b4a0d13445e0bec0a14293bdd2e0beb309d8d81",
+      "size_bytes": 6605
+    },
+    "reporting_checkpoint_safe": {
+      "path": "C:\\RUL_Reliability_Research\\checkpoints\\fd001_fd004_manuscript_reporting_631j_v2_safe.json",
+      "sha256": "9a5daf362396e590f37b9cf9ad10963544ecc7b6577b6b282fb4da93a33ed0b8",
+      "size_bytes": 6369
+    },
+    "table1_target_aware_heldout_csv": {
+      "path": "C:\\RUL_Reliability_Research\\06_results\\cross_dataset_synthesis\\manuscript_ready\\table1_target_aware_heldout_results_631j.csv",
+      "sha256": "aa8e00f3bd4985e95063a0ebbc37aa33911a56410ae61857914906323efb80ca",
+      "size_bytes": 1169
+    },
+    "table2_fd004_supporting_csv": {
+      "path": "C:\\RUL_Reliability_Research\\06_results\\cross_dataset_synthesis\\manuscript_ready\\table2_fd004_supporting_evidence_631j.csv",
+      "sha256": "0d5d2e097bdb9f7def615d6edd08e2f827fb9a111c638f04ca8c1713073e4850",
+      "size_bytes": 791
+    }
+  },
+  "figure_captions": {
+    "Figure 1": "Held-out selective MAE effect under the frozen reliability policies. Selective MAE gain is defined as full-population MAE minus accepted-set MAE, so positive values indicate lower error among accepted predictions. FD001 is shown separately for its primary capped-RUL target and retained raw-RUL secondary analysis; FD002 uses the frozen piecewise-capped RUL target; FD003 uses uncapped RUL. FD004 is not represented as a performance bar because its primary held-out TEST evaluation was stopped before inference when 11 of 248 trajectories were shorter than the frozen 30-cycle input requirement. The figure does not imply comparability of absolute MAE across datasets.",
+    "Figure 2": "FD004 selective-gain direction across 381 executable controlled sensor-degradation scenarios. Positive selective gain occurred in 365 scenarios, zero gain in none, and negative gain in 16. All negative-gain cases belonged to the stuck-sensor family. These results are supporting DEV/corruption evidence and must not be interpreted as held-out TEST performance."
+  },
+  "final_state": {
+    "cross_dataset_absolute_mae_ranking_permitted": false,
+    "cross_dataset_synthesis": "LOCKED",
+    "empirical_phase": "CLOSED",
+    "fd004_heldout_test_metric_available": false,
+    "manuscript_figures": "LOCKED",
+    "manuscript_tables": "LOCKED",
+    "new_scientific_execution_permitted": false,
+    "posthoc_test_retuning_permitted": false,
+    "remaining_work": "manuscript prose, thesis/paper formatting, citation integration, and final document assembly",
+    "reporting_evidence": "LOCKED",
+    "scientific_execution": "CLOSED"
+  },
+  "label_reconstruction": false,
+  "mc_dropout": false,
+  "model_inference": false,
+  "plot_regeneration": false,
+  "prediction_regeneration": false,
+  "project": "Reliability-Aware Selective Remaining Useful Life Prediction under Sensor Degradation",
+  "raw_test_rul_access": false,
+  "reporting_only": true,
+  "scientific_recomputation": false,
+  "source_contracts": {
+    "figure_contract_sha256": "c86ccd77b3ee6fa88dacc724b5fd654c7ba678bd93a9bb7e6891c6291a4d2064",
+    "final_synthesis_provenance_sha256": "b2a1cf2e283f471e3b698c96e7dbb42c14a93c96f79115eb7faa2528d9d3ac9e",
+    "final_target_aware_synthesis_sha256": "5c36d524ab4635bab7487c771043220eda539b008505bb71d844c0fd8f51a90f",
+    "manuscript_reporting_contract_sha256": "dc42f6f8e8f017139bcf3805c97508d5839bd577b6c0622447c3fb82f4b65a80",
+    "reporting_persistence_repair_sha256": "1514bcad959cc36a07d67a6a194ce09bee9a8a46d10c15e2873e42fcd841c56e"
+  },
+  "stage": "6.31L",
+  "status": "FINAL_MANUSCRIPT_ASSEMBLY_MANIFEST_LOCKED",
+  "threshold_policy_selection": false
+}

@@ -1,0 +1,6 @@
+Dataset,Target,Analysis role,TEST endpoints,Accepted,Abstained,Coverage,Full MAE,Accepted MAE,Abstained MAE,Selective MAE gain,Relative MAE reduction (%),Held-out status,Interpretation
+FD001,Capped RUL,primary,100,,,0.37,10.32247262,8.1838446437,11.5784922516,2.1386279763,20.7181753352,Scored,positive selective MAE gain
+FD001,Raw / uncapped RUL,secondary target sensitivity,100,,,0.37,11.39247262,9.0216824815,12.7848414315,2.3707901385,20.8101455898,Scored,positive selective MAE gain
+FD002,Capped RUL,final held-out authority,259,211.0,48.0,0.8146718147,10.6183750316,9.1404821082,17.1149460077,1.4778929235,13.9182588585,Scored,positive selective MAE gain
+FD003,Raw / uncapped RUL,final held-out authority,100,82.0,18.0,0.82,27.2758997226,27.3115463111,27.113509708,-0.0356465886,-0.1306889559,Scored,negative selective MAE gain; frozen reliability policy did not improve held-out TEST MAE
+FD004,Raw / uncapped RUL,primary held-out protocol,248,,,,,,,,,Not scored — structural protocol guard,primary held-out TEST unscored because 11 TEST engines had fewer than the frozen 30 cycles required for one terminal input window; inference stopped before scoring

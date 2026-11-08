@@ -1,0 +1,90 @@
+{
+  "FD004_TEST_STRUCTURAL_ADMISSIBILITY_CONTRACT_630W10AR3": {
+    "dataset": "FD004",
+    "fd004_short_engine_count": 11,
+    "fd004_short_engine_lengths": [
+      [
+        10,
+        23
+      ],
+      [
+        19,
+        24
+      ],
+      [
+        28,
+        20
+      ],
+      [
+        125,
+        21
+      ],
+      [
+        141,
+        19
+      ],
+      [
+        156,
+        28
+      ],
+      [
+        164,
+        29
+      ],
+      [
+        204,
+        19
+      ],
+      [
+        229,
+        20
+      ],
+      [
+        239,
+        28
+      ],
+      [
+        246,
+        29
+      ]
+    ],
+    "fd004_structurally_eligible_engine_count_if_subset_were_used": 237,
+    "fd004_test_engine_count": 248,
+    "historical_endpoint_order": "ascending engine ID 1..100",
+    "historical_method_source": "FD003_TEST_ADMISSION_CONTRACT_629AY",
+    "historical_short_engine_rule": "if any TEST engine has fewer than 30 observed cycles, stop before inference",
+    "historical_test_prediction_population": "one terminal 30-cycle window per TEST engine, ending at that engine's last observed TEST cycle",
+    "historical_window_length": 30,
+    "historical_window_stride": 1,
+    "mc_dropout_executed": false,
+    "model_inference_performed": false,
+    "model_retrained": false,
+    "official_rul_contents_already_opened": true,
+    "padding_applied": false,
+    "policy_modified": false,
+    "preprocessing_refit": false,
+    "primary_test_inference_permitted": false,
+    "primary_test_result": "NOT_SCORED_UNDER_FROZEN_PROTOCOL_DUE_TO_SHORT_TEST_TRAJECTORIES",
+    "primary_test_scoring_permitted": false,
+    "primary_test_stopped_before_inference": true,
+    "primary_test_structurally_admissible": false,
+    "reason": "The inherited held-out TEST protocol requires one terminal 30-cycle window for every TEST engine and explicitly requires stopping before inference if any TEST engine has fewer than 30 observed cycles. FD004 contains such engines.",
+    "risk_recalibrated": false,
+    "row_repetition_applied": false,
+    "short_engines_dropped": false,
+    "stage": "6.30W-10A-R3",
+    "status": "PRIMARY_HELDOUT_TEST_STOPPED_BEFORE_INFERENCE_SHORT_TRAJECTORY_GUARD",
+    "test_contents_already_opened": true,
+    "test_outcome_metrics_computed": false,
+    "test_prediction_errors_computed": false,
+    "test_risk_computed": false,
+    "test_subset_redefined": false,
+    "threshold_modified": false,
+    "threshold_recomputed": false,
+    "variable_length_inference_used": false,
+    "window_length_changed": false,
+    "window_rule_changed": false
+  },
+  "FD004_TEST_STRUCTURAL_ADMISSIBILITY_CONTRACT_SHA256_630W10AR3": "967a244670829a863b7b5d6bfaeeb1aa79e8bd7b39a2ef7f2acffb52ea0dd00b",
+  "persistence_note": "SAFE v2 persistence repair only; JSON-native canonicalization converts Python tuples to JSON arrays/lists without changing the scientific structural-admissibility decision."
+}

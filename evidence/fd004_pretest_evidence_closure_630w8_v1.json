@@ -1,0 +1,62 @@
+{
+  "FD004_PRETEST_EVIDENCE_CLOSURE_630W8": {
+    "all_negative_gain_cases_are_stuck": true,
+    "clean_dev": {
+      "abstained_count": 2165,
+      "abstained_mae": 34.85856846111201,
+      "accepted_count": 8659,
+      "accepted_mae": 27.115518748846267,
+      "full_mae": 28.66427176317141,
+      "population": 10824,
+      "realized_coverage": 0.7999815225424981,
+      "relative_mae_reduction_percent": 5.4030781843026645,
+      "selective_mae_gain": 1.5487530143251433
+    },
+    "clean_dev_gain_positive": true,
+    "clean_dev_outcome_report_sha256": "832d3a8aa885fdd01f23b9507ea55240ed8a81b0a39ad02a201357741ca8e97e",
+    "controlled_corruption": {
+      "negative_gain_by_severity": {
+        "high": 11,
+        "low": 1,
+        "medium": 4
+      },
+      "negative_gain_count": 16,
+      "negative_gain_family": "stuck",
+      "positive_gain_count": 365,
+      "positive_gain_rate": 0.958005249343832,
+      "relative_reduction_percent_mean": 4.485663812606488,
+      "scenario_count": 381,
+      "selective_gain_mean": 1.3081827143487994,
+      "selective_gain_median": 1.5042062473009352,
+      "zero_gain_count": 0
+    },
+    "corruption_group_summary_sha256": "2eb4cbd86109d10286eab5366ced96bea61d56fd679520a21c3819c45ddda058",
+    "corruption_majority_positive": true,
+    "corruption_outcome_report_sha256": "8f40056cd62dde8c8c95af12d7200208258c8dbdbcef55ea4ed4d7cd7451dad0",
+    "dataset": "FD004",
+    "frozen_policy_sha256": "69f09069b501c08d7025e817b145b8a75ed9d4360d0f2d83f5a4726e176a7df2",
+    "future_test_rule": "one-way held-out TEST evaluation only; apply frozen preprocessing/model/risk/policy exactly; no threshold or policy tuning after TEST access",
+    "label_free_corruption_closure_sha256": "76e3ca2c1813aefa6562dd3d5b791754cfa072f7e494cb5c483382fa0af02fc5",
+    "methodology_sha256": "17969e2f4b8f8a4bc95ad2b65bd956ad03b09938e88dd380fffcf2654eff9ccf",
+    "model_retrained_after_policy_freeze": false,
+    "official_rul_contents_read": false,
+    "policy": {
+      "acceptance_comparator": "<=",
+      "acceptance_rule": "accept iff final_selective_risk <= frozen_risk_threshold",
+      "frozen_risk_threshold": 0.7873400997304446,
+      "nominal_coverage": 0.8,
+      "policy_form": "uncertainty_only_fixed_threshold",
+      "tie_handling": "accept all exact threshold ties; no post-hoc adjustment"
+    },
+    "policy_modified_after_policy_freeze": false,
+    "risk_architecture_modified_after_policy_freeze": false,
+    "scientific_conclusion": "The frozen FD004 reliability-aware selective policy improves CLEAN DEV MAE at approximately 80% realized coverage and yields positive selective MAE gain in the large majority of controlled corruption scenarios. Performance is not uniformly robust: all observed negative-gain corruption cases occur in the stuck-sensor family, with the limitation concentrated most strongly at high severity. No threshold or policy retuning is permitted after this pre-TEST closure.",
+    "stage": "6.30W-8",
+    "status": "PRETEST_EVIDENCE_LOCKED_READY_FOR_ONE_WAY_TEST_ADMISSION",
+    "test_admission_performed": false,
+    "test_contents_read": false,
+    "threshold_modified_after_policy_freeze": false,
+    "threshold_recomputed_after_policy_freeze": false
+  },
+  "FD004_PRETEST_EVIDENCE_CLOSURE_SHA256_630W8": "67b1f2110505669a06e508037f211716235574ffe628bb12ec59435051959341"
+}

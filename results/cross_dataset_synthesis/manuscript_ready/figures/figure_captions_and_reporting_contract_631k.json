@@ -1,0 +1,30 @@
+{
+  "captions": {
+    "Figure 1": "Held-out selective MAE effect under the frozen reliability policies. Selective MAE gain is defined as full-population MAE minus accepted-set MAE, so positive values indicate lower error among accepted predictions. FD001 is shown separately for its primary capped-RUL target and retained raw-RUL secondary analysis; FD002 uses the frozen piecewise-capped RUL target; FD003 uses uncapped RUL. FD004 is not represented as a performance bar because its primary held-out TEST evaluation was stopped before inference when 11 of 248 trajectories were shorter than the frozen 30-cycle input requirement. The figure does not imply comparability of absolute MAE across datasets.",
+    "Figure 2": "FD004 selective-gain direction across 381 executable controlled sensor-degradation scenarios. Positive selective gain occurred in 365 scenarios, zero gain in none, and negative gain in 16. All negative-gain cases belonged to the stuck-sensor family. These results are supporting DEV/corruption evidence and must not be interpreted as held-out TEST performance."
+  },
+  "figure_contract": {
+    "figure_1": {
+      "absolute_mae_cross_dataset_ranking": false,
+      "fd004_unscored_test_plotted_as_zero": false,
+      "scientific_quantity": "held-out selective MAE gain",
+      "target_labels_explicit": true
+    },
+    "figure_2": {
+      "evaluation_stage": "DEV / controlled corruption",
+      "presented_as_heldout_test": false,
+      "scientific_quantity": "FD004 controlled-corruption selective-gain direction"
+    },
+    "mc_dropout": false,
+    "metric_recomputation_from_predictions": false,
+    "model_inference": false,
+    "raw_test_rul_access": false,
+    "reporting_only": true,
+    "scientific_recomputation": false,
+    "source_reporting_contract_sha256": "dc42f6f8e8f017139bcf3805c97508d5839bd577b6c0622447c3fb82f4b65a80",
+    "stage": "6.31K",
+    "status": "MANUSCRIPT_FIGURES_AND_CAPTIONS_COMPLETE",
+    "threshold_policy_selection": false
+  },
+  "figure_contract_sha256": "c86ccd77b3ee6fa88dacc724b5fd654c7ba678bd93a9bb7e6891c6291a4d2064"
+}

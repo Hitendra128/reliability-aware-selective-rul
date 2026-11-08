@@ -1,0 +1,68 @@
+{
+  "acceptance_rule": "accept iff uncertainty_risk <= risk_threshold",
+  "dataset": "NASA C-MAPSS FD002",
+  "freeze_status": "WRITE_COMPLETE_RELOAD_NOT_YET_VERIFIED",
+  "frozen_file_sha256": {
+    "policy_selection_audit_csv": "0f20e9c9840a76abc7aa08e0abaecffdd9090a181728b8e613e506814c88e260",
+    "selected_family_severity_csv": "97b65566d2a82095c2008b344880f590bc1ccbf4dbbd38810a5b4e0da7e1bfc4"
+  },
+  "known_negative_family_severity_groups": [
+    {
+      "family": "stuck",
+      "mean_gain": -0.19469848324031921,
+      "median_gain": -0.21436557133312562,
+      "median_realized_coverage": 0.8026771841759293,
+      "severity": "medium"
+    },
+    {
+      "family": "stuck",
+      "mean_gain": -0.5061074782792836,
+      "median_gain": -0.28918330001198456,
+      "median_realized_coverage": 0.809967730369308,
+      "severity": "high"
+    }
+  ],
+  "methodological_status": {
+    "abstention_threshold_selected": true,
+    "dev_rul_labels_used_for_policy_selection": true,
+    "model_executed": false,
+    "model_retrained": false,
+    "official_test_labels_read": false,
+    "test_scored": false,
+    "threshold_selected_before_test": true
+  },
+  "operating_policy": "uncertainty_only_fixed_threshold",
+  "reliability_architecture": "uncertainty_only",
+  "selected_development_summary": {
+    "clean_gain": 0.27231660535555946,
+    "median_gain": 0.27279090377726867,
+    "median_realized_coverage": 0.7994502211067288,
+    "negative_family_severity_groups": 2,
+    "negative_gain_scenarios": 22,
+    "positive_gain_scenarios": 293,
+    "q10_gain": 0.1451036881504166,
+    "q10_realized_coverage": 0.7938329150233059,
+    "worst_family_median_gain": 0.0584127995503394
+  },
+  "selected_exact_risk_threshold": 0.8003345892330226,
+  "selected_nominal_abstention": 0.19999999999999996,
+  "selected_nominal_coverage": 0.8,
+  "selection_contract": {
+    "maximum_q10_coverage_shortfall": 0.02,
+    "minimum_nominal_coverage": 0.8,
+    "objective": "maximize q10 scenario gain among eligible policies",
+    "requires_positive_clean_gain": true,
+    "requires_positive_q10_scenario_gain": true,
+    "requires_positive_worst_family_median_gain": true,
+    "requires_zero_zero_acceptance_scenarios": true,
+    "tie_break": "higher nominal coverage"
+  },
+  "selection_source_step": "6.28H-C4-A1",
+  "step": "6.28H-C4-F1-A",
+  "threshold_source_step": "6.28H-C4-A0",
+  "upstream_reliability_artifact": {
+    "filename": "fd002_c3a3_selected_uncertainty_reliability.npz",
+    "sha256": "e13eb912b4e6408b8591eef306c2caede15bbf9cc80c0183b10321128858cadb"
+  },
+  "upstream_reliability_freeze_step": "6.28H-C3-A3-A3-F2-B"
+}

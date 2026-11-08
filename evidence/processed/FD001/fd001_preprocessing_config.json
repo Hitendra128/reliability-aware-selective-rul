@@ -1,0 +1,60 @@
+{
+    "dataset": "C-MAPSS FD001",
+    "random_state": 42,
+    "validation_fraction_engines": 0.2,
+    "constant_measurement_columns": [
+        "op_setting_3",
+        "sensor_1",
+        "sensor_5",
+        "sensor_10",
+        "sensor_16",
+        "sensor_18",
+        "sensor_19"
+    ],
+    "primary_input_columns": [
+        "op_setting_1",
+        "op_setting_2",
+        "sensor_2",
+        "sensor_3",
+        "sensor_4",
+        "sensor_6",
+        "sensor_7",
+        "sensor_8",
+        "sensor_9",
+        "sensor_11",
+        "sensor_12",
+        "sensor_13",
+        "sensor_14",
+        "sensor_15",
+        "sensor_17",
+        "sensor_20",
+        "sensor_21"
+    ],
+    "cycle_augmented_input_columns": [
+        "cycle",
+        "op_setting_1",
+        "op_setting_2",
+        "sensor_2",
+        "sensor_3",
+        "sensor_4",
+        "sensor_6",
+        "sensor_7",
+        "sensor_8",
+        "sensor_9",
+        "sensor_11",
+        "sensor_12",
+        "sensor_13",
+        "sensor_14",
+        "sensor_15",
+        "sensor_17",
+        "sensor_20",
+        "sensor_21"
+    ],
+    "canonical_target": "RUL_raw",
+    "candidate_capped_targets": {
+        "125": "RUL_cap_125",
+        "130": "RUL_cap_130"
+    },
+    "scaling_method": "StandardScaler",
+    "scaler_fit_on": "development-training engines only"
+}

@@ -1,0 +1,12 @@
+{
+  "accepted_mae": 27.311546311145875,
+  "dataset": "FD003",
+  "endpoint_count": 100,
+  "full_mae": 27.275899722576142,
+  "interpretation": "original frozen held-out negative result retained; no post-hoc reconstruction performed",
+  "new_row_level_posthoc_analysis_performed": false,
+  "original_frozen_result_preserved": true,
+  "realized_coverage": 0.82,
+  "reason": "authoritative held-out row-level arrays were not persisted/recoverable without reconstruction or rerun",
+  "selective_mae_gain": -0.03564658856973324
+}

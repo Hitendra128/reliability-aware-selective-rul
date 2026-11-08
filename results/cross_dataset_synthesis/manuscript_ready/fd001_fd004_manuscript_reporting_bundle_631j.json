@@ -1,0 +1,224 @@
+{
+  "reporting_bundle": {
+    "discussion": {
+      "degradation_interpretation": "FD004 strengthens the reliability argument at DEV stage and under controlled sensor degradation: most executable corruption scenarios retained positive selective gain. However, stuck-sensor corruption exposed the principal observed degradation failure mode.",
+      "main_interpretation": "The evidence supports reliability-aware selective RUL prediction as a useful error-separation mechanism in some settings, but not as a universally improving policy. FD001 and FD002 produced positive held-out selective gains, whereas FD003 produced a genuine held-out negative result.",
+      "protocol_interpretation": "FD004 also demonstrates that reliability evaluation depends on the admissibility of the underlying prediction protocol. The fixed 30-cycle input rule could not represent the full held-out endpoint population because 11 TEST trajectories were shorter than 30 cycles, so the frozen protocol required stopping before inference."
+    },
+    "limitations": {
+      "FD002_raw_target_gap": "No genuine pre-existing FD002 raw-RUL final held-out authority was recovered. FD002 therefore contributes only its frozen piecewise-capped held-out result.",
+      "FD003_negative_generalization": "FD003 is an important negative generalization result: the frozen policy slightly worsened accepted-set held-out MAE relative to the full TEST population.",
+      "FD004_short_history_limitation": "The current fixed-length model protocol has no prospectively frozen mechanism for TEST histories shorter than 30 cycles. Padding, engine exclusion, row repetition, or variable-length inference were not introduced after TEST access.",
+      "FD004_stuck_sensor_limitation": "All 16 negative selective-gain controlled-corruption scenarios in FD004 occurred in the stuck-sensor family, with failures concentrated most strongly at high severity.",
+      "absolute_mae_noncomparability": "Do not rank datasets by absolute MAE. C-MAPSS subsets differ in operating conditions, fault structure, target conventions, and evaluation circumstances. Absolute MAEs are reported as dataset-specific outcomes, not as a pooled performance ranking.",
+      "evaluation_stage_separation": "FD004 CLEAN DEV and corruption results are supporting evidence only and must not be presented as held-out TEST performance.",
+      "target_heterogeneity": "Capped-target rows and raw/uncapped-target rows must remain explicitly distinguished. FD002 has no recovered raw-RUL final held-out authority, and FD004 has no scored held-out TEST MAE."
+    },
+    "nonclaims": [
+      "Do not claim that the selective policy improves every C-MAPSS subset.",
+      "Do not rank datasets by absolute MAE.",
+      "Do not treat capped and raw/uncapped target results as interchangeable.",
+      "Do not report an FD004 held-out TEST MAE.",
+      "Do not present FD004 DEV or corruption outcomes as held-out TEST outcomes.",
+      "Do not create a new FD002 raw-RUL score from stored endpoint predictions.",
+      "Do not retrofit padding or variable-length inference into the frozen FD004 primary TEST result."
+    ],
+    "project_state": "EMPIRICAL_PHASE_COMPLETE_REPORTING_ONLY",
+    "recommended_table_notes": [
+      "FD001 reports both its primary capped-RUL evaluation and its retained raw-RUL secondary analysis.",
+      "FD002 held-out results use the frozen piecewise-capped RUL target.",
+      "FD003 uses uncapped TRAIN-derived RUL and produced a negative held-out selective-MAE result.",
+      "FD004 held-out TEST was not scored because the frozen 30-cycle protocol was structurally incompatible with 11 of 248 TEST trajectories.",
+      "FD004 DEV/corruption results are reported separately as supporting evidence and are not substitutes for held-out TEST performance."
+    ],
+    "results": {
+      "FD001": "Selective filtering improved held-out TEST MAE under both the primary capped target and the retained raw-RUL secondary analysis, at relatively low realized coverage.",
+      "FD002": "The frozen reliability policy improved held-out TEST MAE for the piecewise-capped RUL evaluation.",
+      "FD003": "The frozen reliability policy did not improve held-out TEST MAE under the uncapped/raw RUL target; accepted MAE was slightly worse than full-population MAE.",
+      "FD004": "No held-out TEST performance estimate is reported under the frozen protocol because short TEST trajectories made the complete endpoint population structurally inadmissible for the fixed 30-cycle input rule.",
+      "FD004_supporting_evidence": "Before TEST access, FD004 CLEAN DEV showed positive selective MAE gain. Across 381 executable controlled-degradation scenarios, 365 showed positive selective gain; all 16 negative cases were in the stuck-sensor family, concentrated most strongly at high severity.",
+      "cross_dataset_summary": "Reliability-aware selective prediction showed useful error separation in FD001 and FD002 and strong DEV/corruption evidence in FD004, but it did not generalize uniformly: FD003 produced a scored held-out negative result, and FD004 exposed a structural evaluation limitation of the fixed-window protocol."
+    }
+  },
+  "reporting_contract": {
+    "cross_dataset_absolute_mae_ranking": false,
+    "fd004_supporting_table_row_count": 14,
+    "heldout_table_row_count": 5,
+    "labels_reconstructed": false,
+    "mc_dropout": false,
+    "model_inference": false,
+    "predictions_regenerated": false,
+    "raw_test_rul_access": false,
+    "report_sections": [
+      "target-aware held-out table",
+      "FD004 supporting evidence table",
+      "results",
+      "discussion",
+      "limitations",
+      "nonclaims",
+      "recommended table notes"
+    ],
+    "reporting_only": true,
+    "scientific_recomputation": false,
+    "source_provenance_sha256": "b2a1cf2e283f471e3b698c96e7dbb42c14a93c96f79115eb7faa2528d9d3ac9e",
+    "source_synthesis_sha256": "5c36d524ab4635bab7487c771043220eda539b008505bb71d844c0fd8f51a90f",
+    "stage": "6.31J",
+    "status": "MANUSCRIPT_READY_REPORTING_BUNDLE_COMPLETE",
+    "threshold_policy_selection": false
+  },
+  "reporting_contract_sha256": "dc42f6f8e8f017139bcf3805c97508d5839bd577b6c0622447c3fb82f4b65a80",
+  "table1_records": [
+    {
+      "Abstained": null,
+      "Abstained MAE": 11.5784922516,
+      "Accepted": null,
+      "Accepted MAE": 8.1838446437,
+      "Analysis role": "primary",
+      "Coverage": 0.37,
+      "Dataset": "FD001",
+      "Full MAE": 10.32247262,
+      "Held-out status": "Scored",
+      "Interpretation": "positive selective MAE gain",
+      "Relative MAE reduction (%)": 20.7181753352,
+      "Selective MAE gain": 2.1386279763,
+      "TEST endpoints": 100,
+      "Target": "Capped RUL"
+    },
+    {
+      "Abstained": null,
+      "Abstained MAE": 12.7848414315,
+      "Accepted": null,
+      "Accepted MAE": 9.0216824815,
+      "Analysis role": "secondary target sensitivity",
+      "Coverage": 0.37,
+      "Dataset": "FD001",
+      "Full MAE": 11.39247262,
+      "Held-out status": "Scored",
+      "Interpretation": "positive selective MAE gain",
+      "Relative MAE reduction (%)": 20.8101455898,
+      "Selective MAE gain": 2.3707901385,
+      "TEST endpoints": 100,
+      "Target": "Raw / uncapped RUL"
+    },
+    {
+      "Abstained": 48.0,
+      "Abstained MAE": 17.1149460077,
+      "Accepted": 211.0,
+      "Accepted MAE": 9.1404821082,
+      "Analysis role": "final held-out authority",
+      "Coverage": 0.8146718147,
+      "Dataset": "FD002",
+      "Full MAE": 10.6183750316,
+      "Held-out status": "Scored",
+      "Interpretation": "positive selective MAE gain",
+      "Relative MAE reduction (%)": 13.9182588585,
+      "Selective MAE gain": 1.4778929235,
+      "TEST endpoints": 259,
+      "Target": "Capped RUL"
+    },
+    {
+      "Abstained": 18.0,
+      "Abstained MAE": 27.113509708,
+      "Accepted": 82.0,
+      "Accepted MAE": 27.3115463111,
+      "Analysis role": "final held-out authority",
+      "Coverage": 0.82,
+      "Dataset": "FD003",
+      "Full MAE": 27.2758997226,
+      "Held-out status": "Scored",
+      "Interpretation": "negative selective MAE gain; frozen reliability policy did not improve held-out TEST MAE",
+      "Relative MAE reduction (%)": -0.1306889559,
+      "Selective MAE gain": -0.0356465886,
+      "TEST endpoints": 100,
+      "Target": "Raw / uncapped RUL"
+    },
+    {
+      "Abstained": null,
+      "Abstained MAE": null,
+      "Accepted": null,
+      "Accepted MAE": null,
+      "Analysis role": "primary held-out protocol",
+      "Coverage": null,
+      "Dataset": "FD004",
+      "Full MAE": null,
+      "Held-out status": "Not scored \u2014 structural protocol guard",
+      "Interpretation": "primary held-out TEST unscored because 11 TEST engines had fewer than the frozen 30 cycles required for one terminal input window; inference stopped before scoring",
+      "Relative MAE reduction (%)": null,
+      "Selective MAE gain": null,
+      "TEST endpoints": 248,
+      "Target": "Raw / uncapped RUL"
+    }
+  ],
+  "table2_records": [
+    {
+      "Evidence block": "Clean DEV",
+      "Measure": "Realized coverage",
+      "Value": 0.7999815225
+    },
+    {
+      "Evidence block": "Clean DEV",
+      "Measure": "Full MAE",
+      "Value": 28.6642717632
+    },
+    {
+      "Evidence block": "Clean DEV",
+      "Measure": "Accepted MAE",
+      "Value": 27.1155187488
+    },
+    {
+      "Evidence block": "Clean DEV",
+      "Measure": "Abstained MAE",
+      "Value": 34.8585684611
+    },
+    {
+      "Evidence block": "Clean DEV",
+      "Measure": "Selective MAE gain",
+      "Value": 1.5487530143
+    },
+    {
+      "Evidence block": "Clean DEV",
+      "Measure": "Relative MAE reduction (%)",
+      "Value": 5.4030781843
+    },
+    {
+      "Evidence block": "Controlled corruption",
+      "Measure": "Executable scenarios",
+      "Value": 381
+    },
+    {
+      "Evidence block": "Controlled corruption",
+      "Measure": "Positive-gain scenarios",
+      "Value": 365
+    },
+    {
+      "Evidence block": "Controlled corruption",
+      "Measure": "Zero-gain scenarios",
+      "Value": 0
+    },
+    {
+      "Evidence block": "Controlled corruption",
+      "Measure": "Negative-gain scenarios",
+      "Value": 16
+    },
+    {
+      "Evidence block": "Controlled corruption",
+      "Measure": "Positive-gain rate",
+      "Value": 0.9580052493
+    },
+    {
+      "Evidence block": "Controlled corruption",
+      "Measure": "Negative-gain family",
+      "Value": "stuck"
+    },
+    {
+      "Evidence block": "Controlled corruption",
+      "Measure": "Negative gain by severity",
+      "Value": "{\"high\": 11, \"low\": 1, \"medium\": 4}"
+    },
+    {
+      "Evidence block": "Held-out TEST",
+      "Measure": "Status",
+      "Value": "NOT_SCORED_UNDER_FROZEN_PROTOCOL_DUE_TO_SHORT_TEST_TRAJECTORIES"
+    }
+  ]
+}

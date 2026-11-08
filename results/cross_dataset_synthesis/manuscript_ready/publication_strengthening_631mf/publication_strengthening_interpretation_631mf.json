@@ -1,0 +1,34 @@
+{
+  "fd001": {
+    "aurc_reporting_guidance": "Do not present the single endpoint-ID-tiebroken FD001 AURC as a uniquely defined quantity. Prefer the tie-sensitivity distribution and/or threshold-attainable curve, noting that all 20,000 sampled tie orders remained better than the random-ranking reference.",
+    "claim_boundary": "Report as supportive/directional evidence; do not claim a 95%-level statistically conclusive selective improvement.",
+    "interpretation": "The frozen FD001 selective policy produced a favorable held-out point estimate and meaningful matched-random separation. Endpoint-bootstrap directional stability was high, but the 95% percentile interval for selective MAE gain included zero. Risk-ranking advantage remained below the random-ranking nAURC reference across all sampled within-tie orderings, although the precise AURC magnitude is sensitive to the large number of tied risk values.",
+    "primary_target": "RUL_cap_125",
+    "status": "supportive_but_statistically_cautious"
+  },
+  "fd002": {
+    "claim_boundary": "Strong held-out evidence conditional on the frozen trained model/policy; bootstrap results do not quantify retraining or random-seed variability.",
+    "interpretation": "The frozen FD002 reliability policy shows strong held-out error separation. The uncertainty-selected accepted subset outperformed matched random rejection at the same coverage, the endpoint-bootstrap selective-gain interval remained strictly positive, and the nAURC ranking advantage was essentially insensitive to tied-risk ordering.",
+    "primary_target": "piecewise-capped RUL, cap=125",
+    "status": "strong_and_consistent"
+  },
+  "fd003": {
+    "interpretation": "The original frozen held-out negative result remains authoritative. No row-level post-hoc reconstruction or new selective analysis was performed.",
+    "status": "heldout_negative_counterexample"
+  },
+  "fd004": {
+    "interpretation": "Held-out TEST remains unscored under the frozen fixed-window protocol because short TEST trajectories violated the original evaluation admissibility contract.",
+    "status": "structural_protocol_guard_unscored"
+  },
+  "global_claim": "Reliability-aware selective prediction produced useful error separation in FD001 and especially FD002, but the benefit was not universal: FD003 remained a held-out negative counterexample and FD004 remained structurally unscored under the frozen protocol.",
+  "overall_role": "posthoc_reporting_only_publication_strengthening",
+  "prohibited_claims": [
+    "universal selective-prediction improvement",
+    "formal model-training significance from endpoint bootstrap",
+    "a uniquely defined FD001 AURC despite tied risk values",
+    "FD004 held-out TEST performance",
+    "reconstructed FD003 row-level post-hoc results",
+    "post-TEST policy optimization"
+  ],
+  "stage": "6.31M-F"
+}
