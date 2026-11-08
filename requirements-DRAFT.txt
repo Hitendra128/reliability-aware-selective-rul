@@ -1,0 +1,17 @@
+# DRAFT: not a fully validated reproduction environment.
+# Recorded in saved 00_environment_check.ipynb output (Python 3.10.11):
+numpy==2.2.6
+pandas==2.3.3
+scikit-learn==1.7.2
+
+# Required or imported in the archived notebooks; original versions NOT recorded:
+scipy
+torch
+matplotlib
+seaborn
+joblib
+ipython
+jupyterlab
+
+# Do not claim these unpinned dependencies recreate the historical runtime.
+# Verify all imports and any platform-specific CUDA/PyTorch installation instructions.

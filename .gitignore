@@ -1,0 +1,9 @@
+# Data acquired from NASA must be managed separately
+raw_data/
+02_dataset/raw/
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+venv/
+*.pyc
+.DS_Store
