@@ -19,7 +19,7 @@ The supplied archive has 8 Jupyter notebooks (`00_environment_check.ipynb` throu
 
 Key frozen reporting evidence is located under:
 
-`cross_dataset_synthesis/manuscript_ready/publication_strengthening_631mf/`
+`results/cross_dataset_synthesis/manuscript_ready/publication_strengthening_631mf/`
 
 The final reporting manifest in that directory records checksums for publication-strengthening artifacts, including the frozen threshold-attainable curves, fixed-policy bootstrap, and random-rejection summaries. Older files elsewhere in the archive are historical research records and must **not automatically be treated as the final authoritative analyses**.
 
@@ -29,13 +29,19 @@ The underlying NASA C-MAPSS FD001–FD004 dataset is not bundled in this archive
 
 ## Reproduction status
 
-This archive is an **evidence and partial-code archive**, not a guaranteed one-command reproduction package. Some notebooks have historical absolute Windows paths; complete environment versions are not preserved; and FD002–FD004 trained-model checkpoints are not included. FD003 endpoint arrays cannot be reconstructed as if they were historically frozen. See `ARTIFACT_STATUS.md` and `RELEASE_CHECKLIST.md` for details.
+This archive is an **evidence and partial-code archive**, not a guaranteed one-command reproduction package. Some notebooks have historical absolute Windows paths; complete environment versions are not preserved; and FD002–FD004 trained-model checkpoints are not included. FD003 endpoint arrays cannot be reconstructed as if they were historically frozen. See `ARTIFACT_STATUS.md`, `REPRODUCIBILITY.md` and `RELEASE_CHECKLIST.md` for details.
 
 The archived notebook execution outputs were generated in the original working environment. **Do not claim the current package has been rerun successfully in a clean environment.**
 
+## Locating the frozen reporting results
+
+Start with `results/cross_dataset_synthesis/manuscript_ready/`. For final uncertainty and selective-prediction reporting, consult `results/cross_dataset_synthesis/manuscript_ready/publication_strengthening_631mf/FINAL_PUBLICATION_STRENGTHENING_MANIFEST_631MF.json`, `publication_strengthening_summary_631mf.csv`, and the final threshold-attainable CSVs. For FD002 controlled-degradation selection-conditioned development evidence, consult `evidence/step6_reliability_signals/fd002_c4/`; for FD004 structural admissibility consult `evidence/fd004_test_structural_admissibility_630w10ar3_v2_safe.json`.
+
+The repository is intentionally a **partial-code and evidence archive**. It does not establish a verified rerun of the historical model training or all downstream evaluations. See `REPRODUCIBILITY.md` for known blockers.
+
 ## Historical environment evidence
 
-The saved `00_environment_check.ipynb` output records:
+The original `00_environment_check.ipynb` saved output (retained in the untouched source archive, not the stripped review notebook) records:
 
 - Python 3.10.11
 - NumPy 2.2.6
